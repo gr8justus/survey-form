@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Roboto:ital,wght@0,500;1,100;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)),
+        fixed center / cover url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    margin: 2em auto;
+    text-align: center;
+}
+
+#title {
+    font-weight: 500;
+    margin-bottom: 0.3em;
+}
+
+#description {
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: #fff9;
+}
+
+form {
+    background-color: #1B1B32CC;
+    width: 55%;
+    min-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    padding: 3em;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2em;
+    row-gap: 0.75em;
+}
+
+#biodata label:not(label:last-child) {
+    margin-bottom: 1em;
+}
+
+legend {
+    margin-bottom: 0.5em;
+}
+
+textarea,
+select,
+button,
+input:not(
+    [type="radio"],
+    [type="checkbox"]) {
+    width: 100%;
+    margin-top: 0.4em;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5em;
+    font: italic 400 1em 'Lato', sans-serif;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 0.4em;
+}
+
+button {
+    background-color: #37af65;
+    border: none;
+    padding: 0.5em 0;
+    border-radius: 5px;
+    font: inherit;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        min-width: 85%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    body {
+        font-size: 10px;
+    }
+}
