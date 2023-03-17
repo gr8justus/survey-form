@@ -110,6 +110,10 @@ button {
     body {
         font-size: 12px;
     }
+
+    #description {
+        letter-spacing: unset;
+    }
 }
 
 @media only screen and (max-width: 420px) {
